@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet" />
+   
+  </head>
+  <body ng-app="ArticleApp">
+
+    <div class="main" ng-controller="ArticleController">
+        <div class="container">
+        <div class="row">
+          <div class="col-sm-5 col-sm-offset-7">
+            <h1>{{ title }}</h1>
+            <div class="forecast" ng-repeat="day in products">
+                <div class="card" info="day"></div>
+            <!-- <div class="forecast" ng-repeat="day in products">
+              <div class="day row">
+                <div class="weekday col-md-4">
+                  <p>{{ day.pubdate | date}}</p>
+                </div>
+                <div class="weather col-md-3">
+                  <img ng-src="{{ cover }}">
+                </div>
+                <div class="weather col-md-1">
+                </div>
+                <div class="high col-md-2">
+                  <p>{{ day.likes | number }}</p>
+                </div>
+                <div class="low col-md-2">
+                  <p>{{ day.dislikes| number}}</p>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Modules -->
+    <!-- <script src="js/app.js"></script> -->
+    <script src="js/bundle.js" type="text/javascript"></script>
+    <!-- Controllers -->
+    <!-- <script src="js/controllers/ArticleController.js"></script> -->
+
+    <!-- Services -->
+    <!-- <script src="js/services/ArticleFetcher.js"></script> -->
+
+    <!-- Directives -->
+
+
+  </body>
+</html>
